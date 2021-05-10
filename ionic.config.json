@@ -1,0 +1,7 @@
+{
+    "name": "Himma",
+    "integrations": {
+        "cordova": {}
+    },
+    "type": "angular"
+}

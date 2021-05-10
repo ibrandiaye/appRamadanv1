@@ -1,0 +1,104 @@
+ion-content.background {
+    --background: url(../../../assets/img/menu/BG.png) 0 0/100% 100% no-repeat;
+    background-size: cover;
+    text-align: center;
+    .body {
+        border-radius: 15px;
+        box-shadow: inset;
+        // background-color: #ffff;
+        background: url(../../../assets/img/adhan/BG_douas.png) 0 0/100% 100% no-repeat;
+        background-size: cover;
+        margin-top: 130px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 100%;
+        overflow: scroll;
+    }
+}
+
+ion-toolbar {
+    --background: transparent no-repeat fixed center;
+    --color: black;
+    position: absolute;
+    top: 0px;
+    padding-left: 7px;
+    padding-right: 7px;
+    // border: 1px solid blue;
+    height: 80px;
+    .titleicon {
+        position: sticky;
+        width: 100%;
+        left: 0px;
+        bottom: 0px;
+        // border: 1px solid blue;
+        text-align: center;
+    }
+    .titleicon2 {
+        position: absolute;
+        //  border: 1px solid blue;
+        width: 100%;
+        top: 2px;
+        bottom: 0px;
+        text-align: center;
+    }
+}
+
+.child-item {
+    --ion-item-background: #d3dad87e;
+    --padding-start: -10px;
+    --inner-padding-end: 0px;
+    margin-left: 0px;
+    margin-bottom: 3px;
+}
+
+.accordion-list {
+    margin-bottom: 4px;
+    .section,
+    .section-active {
+        --min-height: 58px;
+    }
+}
+
+.section {
+   border: 2px solid #E8D6E5;
+    --ion-item-background: #A884E4;
+    font-weight: 600;
+    --ion-item-color: #fff;
+    border-radius: 25px;
+    ion-icon {
+        color: #fff;
+    }
+}
+
+.section-active {
+    --ion-item-background: #ABCCF4;
+    border-radius: 25px;
+    font-weight: 600;
+    --ion-item-color: #fff;
+    ion-icon {
+        color: #fff;
+    }
+}
+
+.child-list {
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    .child,
+    .child-active {
+        margin-bottom: 2px;
+    }
+}
+
+.child {
+    --ion-item-background: #e8e7e646;
+    --ion-item-color: #fff;
+}
+
+.child-active {
+    --ion-item-background: #ffc400;
+    --ion-item-color: #fff;
+    ion-icon {
+        color: #fff;
+    }
+}

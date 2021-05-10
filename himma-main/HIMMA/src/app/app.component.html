@@ -1,0 +1,150 @@
+<ion-app>
+    <!-- <ion-router-outlet></ion-router-outlet> -->
+    <ion-split-pane contentId="menu-content" when="xs" [disabled]="true">
+        <ion-menu contentId="menu-content" type="push">
+            <!-- menuId="menu-content" side="start" -->
+            <ion-content class="body">
+
+                <div class="header">
+                    <div class="logo">
+                        <img src="../../../assets/img/logo_with_carre.png" style="width: 70px;">
+                    </div>
+                </div>
+                <div class="nav">
+                    <ion-menu-toggle auto-hide="true">
+                        <div class="nav-item" routerLink="notification" routerDirection="root">
+                            <ion-row>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Notifications_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                                <ion-col size="8"> <b style="color: #fff;font-size: 15px;">Notifications</b></ion-col>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Fleche_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                            </ion-row>
+
+
+
+                        </div>
+                        <div class="nav-item" routerLink="adhan" routerDirection="root">
+                            <ion-row>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Adhans_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                                <ion-col size="8"> <b style="color: #fff;font-size: 15px;">Adhâns</b></ion-col>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Fleche_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                        <div class="nav-item" routerLink="qibla" routerDirection="root">
+                            <ion-row>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Qiba_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                                <ion-col size="8"> <b style="color: #fff;font-size: 15px;">Qibla</b></ion-col>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Fleche_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                        <div class="nav-item" routerLink="position" routerDirection="root">
+                            <ion-row>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Localisation_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                                <ion-col size="8"> <b style="color: #fff;font-size: 15px;">Localisation</b></ion-col>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Fleche_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                        <div class="nav-item" routerLink="calendrier" routerDirection="root">
+                            <ion-row>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Calendrier_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                                <ion-col size="8"> <b style="color: #fff;font-size: 15px;">Calendrier musulman</b></ion-col>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Fleche_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                        <div class="nav-item" routerLink="pc" routerDirection="root">
+                            <ion-row>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/PDC_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                                <ion-col size="8"> <b style="color: #fff;font-size: 15px;">Politique de confidentialité</b></ion-col>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Fleche_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                        <div class="nav-item" routerLink="cj" routerDirection="root">
+                            <ion-row>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/CU_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                                <ion-col size="8"> <b style="color: #fff;font-size: 15px;">Conditions d'utilisation</b></ion-col>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Fleche_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                        <div class="nav-item" routerLink="support" routerDirection="root">
+                            <ion-row>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Support_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                                <ion-col size="8"> <b style="color: #fff;font-size: 15px;">Support</b></ion-col>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Fleche_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                        <div class="nav-item" routerLink="qibla" routerDirection="root">
+                            <ion-row>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Evaluez_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                                <ion-col size="8"> <b style="color: #fff;font-size: 15px;">Evaluez-nous</b></ion-col>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Fleche_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                        <div class="nav-item" routerLink="don" routerDirection="root">
+                            <ion-row>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Donation_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                                <ion-col size="8"> <b style="color: #fff;font-size: 15px;">Faire un don</b></ion-col>
+                                <ion-col size="2">
+                                    <ion-img src="../assets/img/menu/Fleche_icon.png" style="width: 15px;"></ion-img>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                        <div class="nav-item" routerLink="qibla" routerDirection="root">
+                            <ion-img src="../assets/img/menu/Bouton_profil.png" style="width: 60px;"></ion-img>
+                        </div>
+
+                    </ion-menu-toggle>
+                </div>
+            </ion-content>
+            <!-- <ion-footer class="body">
+                <div class="footer">
+                    <div class="footer-nav">
+                        <ul>
+                            <li>Like this app? Leave a review!</li>
+                        </ul>
+                    </div>
+
+                    
+                </div>
+            </ion-footer> -->
+
+        </ion-menu>
+        <ion-router-outlet id="menu-content"></ion-router-outlet>
+    </ion-split-pane>
+</ion-app>

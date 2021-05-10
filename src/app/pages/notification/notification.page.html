@@ -1,0 +1,62 @@
+<ion-header translucent>
+    <ion-toolbar>
+
+        <div class="titleicon">
+
+            <img src="../../../assets/img/logo_with_carre.png" alt="">
+        </div>
+
+    </ion-toolbar>
+</ion-header>
+<ion-content padding class="background">
+    <div class="body">
+
+        <ion-grid fixed>
+            <ion-row>
+                <ion-col size="2">
+                    <ion-fab-button color="light" style="zoom: 0.8;" (click)="retour()">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                    </ion-fab-button>
+                </ion-col>
+                <ion-col size="10">
+                    <div class="title">
+                        <p>Notifications</p>
+                    </div>
+
+                </ion-col>
+
+                <ion-col size="12">
+
+                    <p style="text-align: center;font-size: medium;color:white;font-weight: bold;margin-left: 30px;margin-right: 30px;">Configurer la notification des heures de prière</p>
+                    <br><br><br>
+                </ion-col>
+
+                <ion-col size="12" style="margin-top: -30px;">
+                    <div *ngFor="let item of configuration">
+                        <div class="notificationItem">
+                            <ion-row style="margin-bottom: 5px;">
+                                <ion-col size="4">
+                                    <img [src]="item.logo" alt="" style="zoom: 0.4;">
+                                </ion-col>
+                                <ion-col *ngFor="let item2 of item.cap" size="2">
+
+                                    <ion-img *ngIf="item2.active=='green'" src="../../../assets/img/NOT/{{item2.icon}}" alt="" (click)="confNotification(item.numero,item2.idt)" style="margin-left: -20px;"></ion-img>
+                                    <ion-img *ngIf="item2.active=='white'" src="../../../assets/img/NOT/{{item2.icon2}}" alt="" (click)="confNotification(item.numero,item2.idt)" style="margin-left: -20px;"></ion-img>
+                                    <p style="margin-top: -10px;font-size: xx-small;padding-left: -15px;margin-left: -20px;" [style.color]="item2.active">{{item2.nom}}</p>
+                                </ion-col>
+
+                            </ion-row>
+
+                        </div>
+                    </div>
+                </ion-col>
+
+
+
+
+            </ion-row>
+
+        </ion-grid>
+
+    </div>
+</ion-content>

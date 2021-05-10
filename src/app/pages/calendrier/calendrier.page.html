@@ -1,0 +1,41 @@
+<ion-header translucent>
+    <ion-toolbar>
+
+        <div class="titleicon">
+
+            <img src="../../../assets/img/logo_with_carre.png" alt="">
+        </div>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+    <div class="body">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="2">
+                    <!-- <ion-fab-button color="light" style="zoom: 0.8;" (click)="retour()">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                    </ion-fab-button> -->
+                    <div class="title2" (click)="retour()">
+                        <ion-icon id="ic" name="chevron-back-outline"></ion-icon>
+                    </div>
+                </ion-col>
+                <ion-col size="10">
+
+                    <div class="title" (click)="calendrier()">
+                        <p>Calendrier Greg/hijri</p>
+                    </div>
+                    <br><br>
+                </ion-col>
+                <ion-col size="12" *ngIf="showimage == 1">
+                    <div id="calendar-converter1"></div>
+                    <div id="calendar-converter2"></div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+    </div>
+
+
+</ion-content>

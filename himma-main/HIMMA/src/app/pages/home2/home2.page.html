@@ -1,0 +1,91 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-row>
+            <ion-col size="2">
+                <ion-buttons>
+                    <ion-menu-button color="success"></ion-menu-button>
+                </ion-buttons>
+            </ion-col>
+            <ion-col size="8">
+                <div class="titleicon">
+
+                    <img src="../../../assets/img/himma_logo.png" alt="" style="width: 50px;">
+                </div>
+            </ion-col>
+            <ion-col size="2">
+                <div class="titleicon2">
+                    <img src="../../../assets/img/menu//Bouton_profil.png" alt="" style="zoom: 1;">
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="background" [fullscreen]="true">
+    <div class="body">
+
+
+        <ion-grid class="grid_p " fixed>
+            <ion-row>
+
+                <ion-col size="12">
+
+                    <div class="card" style="align-content: center;">
+                        <ion-card-header>
+                            <!-- <p style="text-align: start;font-weight: bold;font-size: medium;color: #fff;margin-top: -2%; ">PROCHAINE PRIERE</p> -->
+                            <p style="text-align: end;font-weight: bold;font-size: small;color: #fff;margin-top: -2%; ">{{dateData.gregorian}}</p>
+                            <p style="text-align: end;font-weight: bold;font-size: small;color: #fff;margin-top: -2%; ">{{dateData.hijri}}</p>
+                        </ion-card-header>
+                        <ion-card-content>
+                            <p style="text-align: start;font-weight: bold;font-size: 45px;color: #fff; margin-top: -10%; ">{{time}}</p>
+                            <ion-button class="ion-float-end " style="padding-bottom: 5%;margin-top: -3%;margin-left: -25%; " color="light ">
+                                <ion-icon slot="start " color="danger " name="pin" size="default " shap="round "></ion-icon>
+                                <span style="color: rgb(54, 72, 177); ">{{position}}</span>
+                            </ion-button>
+                        </ion-card-content>
+                    </div>
+
+
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="row_content">
+                <ion-col size="6 ">
+                    <img src="../../../assets/img/Menu_NDJ.png " alt=" " (click)="nafila() ">
+                </ion-col>
+                <ion-col size="6 ">
+                    <img src="../../../assets/img/Menu_HP.png " alt=" " (click)="priere() ">
+                </ion-col>
+                <ion-col size="6 " style="margin-top: -15px;">
+                    <img src="../../../assets/img/Menu_DB.png " alt=" " (click)="doua() ">
+                </ion-col>
+                <ion-col size="6 " style="margin-top: -15px;">
+                    <img src="../../../assets/img/Menu_GM.png " alt=" " (click)="guideMusulman() ">
+
+                </ion-col>
+            </ion-row>
+            <!-- <ion-row>
+                <ion-col size="12 ">
+                    <div class="footer ">
+                        <ion-row style="margin-top: 0%;margin-left: 10%; ">
+                            <ion-col size="3 " style="margin-top: 2%; " (click)="calendrier() ">
+                                <ion-img src="../../../assets/img/INTERFACE/Calendrier_menu rapide.png " style="width: 25px; "></ion-img>
+                            </ion-col>
+                            <ion-col size="3 " style="margin-top: 2%; " (click)="qibla()">
+                                <ion-img src="../../../assets/img/INTERFACE/Qibla_menu rapide.png " style="width: 25px; "></ion-img>
+                            </ion-col>
+                            <ion-col size="3 " style="margin-top: 2%; ">
+                                <ion-img src="../../../assets/img/INTERFACE/BAI_menu rapide.png " style="width: 25px; "></ion-img>
+                            </ion-col>
+                            <ion-col size="3 " style="margin-top: 2%; ">
+                                <ion-img src="../../../assets/img/INTERFACE/Partage_menu rapide.png " style="width: 25px; "></ion-img>
+                            </ion-col>
+                        </ion-row>
+                    </div>
+                </ion-col>
+            </ion-row> -->
+
+        </ion-grid>
+
+    </div>
+
+</ion-content>

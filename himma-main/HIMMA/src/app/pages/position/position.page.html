@@ -1,0 +1,60 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-row>
+            <ion-col size="2">
+                <ion-buttons>
+                    <ion-menu-button color="success"></ion-menu-button>
+                </ion-buttons>
+            </ion-col>
+            <ion-col size="8">
+                <div class="titleicon">
+
+                    <img src="../../../assets/img/himma_logo.png" alt="" style="width: 50px;">
+                </div>
+            </ion-col>
+            <ion-col size="2">
+                <div class="titleicon2">
+                    <img src="../../../assets/img/menu//Bouton_profil.png" alt="" style="zoom: 1;">
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-toolbar>
+</ion-header>
+<ion-content padding class="background">
+    <div class="body">
+
+        <ion-grid fixed>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-fab-button color="success" (click)="retour()">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                    </ion-fab-button>
+                </ion-col>
+
+                <ion-col size="12">
+                    <!-- <img src="../../../assets/img/icon.png" alt="" style="justify-content: center; display: flex;align-items: center;margin-left: 37%;zoom: 1.25;"> -->
+                    <p style="text-align: center;font-size: medium;color:black;font-weight: bold;">Indiquer votre position</p>
+                    <br><br><br>
+                </ion-col>
+
+                <ion-col size="12">
+                    <img src="../../../assets/img/carte.png" alt="" style="justify-content: center; display: flex;align-items: center;">
+
+                    <br><br><br>
+                </ion-col>
+
+                <ion-col size="12">
+
+                    <ion-button (click)="getPosition()" expand="block" size="default" shape="round" color="success">
+                        Autoriser
+                    </ion-button>
+
+                </ion-col>
+
+
+            </ion-row>
+
+        </ion-grid>
+
+    </div>
+</ion-content>

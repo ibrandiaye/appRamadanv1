@@ -1,0 +1,85 @@
+ion-content.background {
+    --background: url(../../../assets/img/NOT/BG.png) 0 0/100% 100% no-repeat;
+    background-size: cover;
+    text-align: center;
+    .body {
+        border-radius: 15px;
+        box-shadow: inset;
+        background-color: rgba(255, 255, 255, 0.39);
+        margin-top: 130px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: max-content;
+        .title {
+            width: 100%;
+            border-radius: 50px;
+            background-color: #f4f5f8;
+            color: #00cc99;
+            height: 35px;
+            margin-top: -10px;
+            p {
+                font-weight: bold;
+                padding-top: 10px;
+                padding-right: 20%;
+            }
+        }
+        .body2 {
+            border-radius: 15px;
+            box-shadow: inset;
+            background-color: rgba(240, 241, 243, 0.897);
+            height: max-content;
+            margin-top: -25px;
+            ion-item {
+                border-radius: 30px;
+                //height: 55px;
+                box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.08);
+                --highlight-height: 0px;
+                ion-input {
+                    font-size: 18px;
+                    --padding-top: 20px;
+                    --padding-bottom: 15px;
+                    --padding-start: 20px;
+                }
+                ion-textarea {
+                    border-radius: 30px !important;
+                    height: 155px !important;
+                }
+            }
+            .check {
+                margin-top: 140%;
+            }
+            .image_mosque {
+                zoom: 0.6;
+                //border: 4px solid #00cc99;
+                border-radius: 5px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+ion-toolbar {
+    --background: transparent no-repeat fixed center;
+    --color: black;
+    position: absolute;
+    top: 0px;
+    padding-left: 7px;
+    padding-right: 7px;
+    height: 80px;
+    // border: 1px solid blue;
+    .titleicon {
+        position: sticky;
+        width: 100%;
+        //border: 2px solid white;
+        left: 5;
+        bottom: -15px;
+        //top: 10px;
+        text-align: center;
+        //height: 50px;
+        img {
+            width: 20%;
+            height: 50%;
+            margin-top: 2px;
+        }
+    }
+}

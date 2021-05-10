@@ -1,0 +1,58 @@
+ion-content.background {
+    --background: url(../../../assets/img/NOT/BG.png) 0 0/100% 100% no-repeat;
+    background-size: cover;
+    text-align: center;
+    .body {
+        border-radius: 15px;
+        box-shadow: inset;
+        background-color: rgba(255, 255, 255, 0.39);
+        margin-top: 110px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: max-content;
+        .title {
+            width: 100%;
+            border-radius: 50px;
+            background-color: #f4f5f8;
+            color: #00cc99;
+            height: 35px;
+            margin-top: -10px;
+            p {
+                font-weight: bold;
+                padding-top: 10px;
+                padding-right: 20%;
+                //margin-top: 25px;
+            }
+        }
+        .notificationItem {
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.39);
+        }
+    }
+}
+
+ion-toolbar {
+    --background: transparent no-repeat fixed center;
+    --color: black;
+    position: absolute;
+    top: 0px;
+    padding-left: 7px;
+    padding-right: 7px;
+    height: 80px;
+    // border: 1px solid blue;
+    .titleicon {
+        position: sticky;
+        width: 100%;
+        //border: 2px solid white;
+        left: 5;
+        bottom: -15px;
+        //top: 10px;
+        text-align: center;
+        //height: 50px;
+        img {
+            width: 20%;
+            height: 50%;
+            margin-top: 2px;
+        }
+    }
+}

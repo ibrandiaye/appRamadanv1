@@ -1,0 +1,90 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-row>
+            <ion-col size="2">
+                <ion-button (click)="retour()" color="success">
+                    <ion-icon slot="icon-only" name="arrow-back-outline" style="zoom: 0.5;"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col size="8">
+                <div class="titleicon">
+
+                    <img src="../../../assets/img/himma_logo.png" alt="" style="width: 50px;">
+                </div>
+            </ion-col>
+            <ion-col size="2">
+                <div class="titleicon2">
+                    <img src="../../../assets/img/menu//Bouton_profil.png" alt="" style="zoom: 1;">
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-toolbar>
+
+</ion-header>
+<ion-content padding class="background">
+    <div class="body">
+
+        <ion-grid fixed>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-button color="primary">
+                        <ion-icon slot="start" color="danger" name="pin" size="default" shap="round"></ion-icon>
+                        {{city}}
+                    </ion-button>
+                </ion-col>
+
+                <ion-col size="12">
+                    <div class="sun">
+
+                        <img *ngIf="showSun == 1" [defaultImage]="defaultImage" [lazyLoad]="'../../../assets/img/fajr.png'" alt="" style="justify-content: center; display: flex;align-items: center;">
+                        <img *ngIf="showSun == 2" [defaultImage]="defaultImage" [lazyLoad]="'../../../assets/img/dohr.png'" alt="" style="justify-content: center; display: flex;align-items: center;">
+                        <img *ngIf="showSun == 3" [defaultImage]="defaultImage" [lazyLoad]="'../../../assets/img/asr.png'" alt="" style="justify-content: center; display: flex;align-items: center;">
+                        <img *ngIf="showSun == 4" [defaultImage]="defaultImage" [lazyLoad]="'../../../assets/img/maghreb.png'" alt="" style="justify-content: center; display: flex;align-items: center;">
+                        <img *ngIf="showSun == 5" [defaultImage]="defaultImage" [lazyLoad]="'../../../assets/img/icha.png'" alt="" style="justify-content: center; display: flex;align-items: center;">
+                    </div>
+
+                </ion-col>
+
+                <ion-col size="4">
+                    <img src="../../../assets/img/fajr1.png" alt="" style="justify-content: center; display: flex;align-items: center;">
+                    <p style="position: absolute;top: 35%;left:20%;font-weight: bold;color: #FFF;font-size: small;">FAJR</p>
+                    <p style="position: absolute;top: 50%;left:20%;font-weight: bold;color: #FFF;">{{priere.fajr}}</p>
+                </ion-col>
+                <ion-col size="4">
+                    <img src="../../../assets/img/chorouq1.png" alt="" style="justify-content: center; display: flex;align-items: center;">
+                    <p style="position: absolute;top: 35%;left:20%;font-weight: bold;color: #FFF; font-size: small;">CHOROUQ</p>
+                    <p style="position: absolute;top: 50%;left:20%;font-weight: bold;color: #FFF;">{{priere.chorouq}}</p>
+                </ion-col>
+                <ion-col size="4">
+                    <img src="../../../assets/img/dohr1.png" alt="" style="justify-content: center; display: flex;align-items: center;">
+                    <p style="position: absolute;top: 35%;left:20%;font-weight: bold;color: #FFF; font-size: small;">DOHR</p>
+                    <p style="position: absolute;top: 50%;left:20%;font-weight: bold;color: #FFF;">{{priere.dohr}}</p>
+                </ion-col>
+
+                <ion-col size="4">
+                    <img src="../../../assets/img/asr1.png" alt="" style="justify-content: center; display: flex;align-items: center;">
+                    <p style="position: absolute;top: 35%;left:20%;font-weight: bold;color: #FFF; font-size: small;">ASR</p>
+                    <p style="position: absolute;top: 50%;left:20%;font-weight: bold;color: #FFF;">{{priere.asr}}</p>
+                </ion-col>
+                <ion-col size="4">
+                    <img src="../../../assets/img/maghreb1.png" alt="" style="justify-content: center; display: flex;align-items: center;">
+                    <p style="position: absolute;top: 35%;left:20%;font-weight: bold;color: #FFF; font-size: small;">MAGHREB</p>
+                    <p style="position: absolute;top: 50%;left:20%;font-weight: bold;color: #FFF;">{{priere.maghreb}}</p>
+                </ion-col>
+                <ion-col size="4">
+                    <img src="../../../assets/img/icha1.png" alt="" style="justify-content: center; display: flex;align-items: center;">
+                    <p style="position: absolute;top: 35%;left:20%;font-weight: bold;color: #FFF; font-size: small;">ICHA</p>
+                    <p style="position: absolute;top: 50%;left:20%;font-weight: bold;color: #FFF;">{{priere.icha}}</p>
+
+                </ion-col>
+
+
+
+
+
+            </ion-row>
+
+        </ion-grid>
+
+    </div>
+</ion-content>

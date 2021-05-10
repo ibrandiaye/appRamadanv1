@@ -1,0 +1,75 @@
+<ion-header translucent>
+    <ion-toolbar>
+
+        <div class="titleicon">
+
+            <img src="../../../assets/img/logo_with_carre.png" alt="">
+        </div>
+
+    </ion-toolbar>
+</ion-header>
+<ion-content padding class="background">
+    <div class="body">
+
+        <ion-grid fixed>
+            <ion-row>
+                <ion-col size="2">
+                    <ion-fab-button color="light" style="zoom: 0.8;" (click)="retour()">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                    </ion-fab-button>
+                </ion-col>
+                <ion-col size="10">
+                    <!-- <ion-button expand="block" size="default" shape="round" color="light">
+                        Qibla
+                    </ion-button> -->
+                    <div class="title">
+                        <p>Qibla</p>
+                    </div>
+
+                </ion-col>
+                <ion-col size="12">
+                    <p style="text-align: center;font-weight: bold;color: #fff;">S'orienter vers la Mecque</p>
+                </ion-col>
+
+            </ion-row>
+
+            <div class="body2">
+                <ion-row>
+
+                    <ion-col size="12">
+
+                        <div id="container">
+                            <img *ngIf="showimage == 0" src="../../../assets/img/qibla/Boussole_blanche.png" width="300em" [ngStyle]="{'transform': 'rotate('+(qiblaLocation*-1)+'deg)'}">
+                            <img *ngIf="showimage == 1" src="../../../assets/img/qibla/Boussole_blanche.png" width="300em" [ngStyle]="{'transform': 'rotate('+(qiblaLocation*-1)+'deg)'}">
+                            <img *ngIf="showimage == 2" src="../../../assets/img/qibla/Boussole_verte.png" width="300em" [ngStyle]="{'transform': 'rotate('+(qiblaLocation*-1)+'deg)'}">
+                            <img *ngIf="showimage == 3" src="../../../assets/img/qibla/Boussole_bleue.png" width="300em" [ngStyle]="{'transform': 'rotate('+(qiblaLocation*-1)+'deg)'}">
+                            <img *ngIf="showimage == 4" src="../../../assets/img/qibla/Boussole_noire.png" width="300em" [ngStyle]="{'transform': 'rotate('+(qiblaLocation*-1)+'deg)'}">
+                            <img *ngIf="showimage == 5" src="../../../assets/img/qibla/Boussole_beige.png" width="300em" [ngStyle]="{'transform': 'rotate('+(qiblaLocation*-1)+'deg)'}">
+                        </div>
+                        <br><br><br>
+
+                    </ion-col>
+                    <ion-col size="1"></ion-col>
+                    <ion-col size="10" style="margin-top: -25px;">
+                        <ion-button expand="block" shape="round" color="primary" size="small">
+                            Couleur de la boussole
+                        </ion-button>
+
+                    </ion-col>
+                    <ion-col size="1"></ion-col>
+                    <ion-col size="1"></ion-col>
+                    <ion-col size="2"><img src="../../../assets/img/qibla/Boussole_blanche.png" (click)="changeCouleur(1)" alt=""></ion-col>
+                    <ion-col size="2"><img src="../../../assets/img/qibla/Boussole_verte.png" (click)="changeCouleur(2)" alt=""></ion-col>
+                    <ion-col size="2"><img src="../../../assets/img/qibla/Boussole_bleue.png" (click)="changeCouleur(3)" alt=""></ion-col>
+                    <ion-col size="2"><img src="../../../assets/img/qibla/Boussole_noire.png" (click)="changeCouleur(4)" alt=""></ion-col>
+                    <ion-col size="2"><img src="../../../assets/img/qibla/Boussole_beige.png" (click)="changeCouleur(5)" alt=""></ion-col>
+                    <ion-col size="1"></ion-col>
+
+
+
+                </ion-row>
+            </div>
+        </ion-grid>
+
+    </div>
+</ion-content>

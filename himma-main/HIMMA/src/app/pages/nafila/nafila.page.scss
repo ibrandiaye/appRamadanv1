@@ -1,0 +1,48 @@
+ion-content.background {
+    --background: url(../../../assets/img/menu/BG.png) 0 0/100% 100% no-repeat;
+    background-size: cover;
+    text-align: center;
+    .body {
+        border-radius: 15px;
+        box-shadow: inset;
+        //background-color: #ffff;
+        background: url(../../../assets/img/bg_nafila.png) 0 0/100% 100% no-repeat;
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: max-content;
+        height: 80%;
+    }
+}
+
+ion-toolbar {
+    --background: transparent no-repeat fixed center;
+    --color: black;
+    position: absolute;
+    top: 0px;
+    padding-left: 7px;
+    padding-right: 7px;
+    // border: 1px solid blue;
+    height: 80px;
+    .titleicon {
+        position: sticky;
+        width: 100%;
+        left: 0px;
+        bottom: 0px;
+        // border: 1px solid blue;
+        text-align: center;
+    }
+    .titleicon2 {
+        position: absolute;
+        //  border: 1px solid blue;
+        width: 100%;
+        top: 2px;
+        bottom: 0px;
+        text-align: center;
+    }
+}
+
+.card {
+    background-size: cover;
+    text-align: center;
+}
